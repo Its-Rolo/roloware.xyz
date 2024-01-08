@@ -41,9 +41,6 @@
   
     text-align: center; /* Center text horizontally */
     transform: translateY(-50%); /* Center text vertically */
-
-    opacity: 0;
-    animation: fadeInOut 3s infinite;
   }
   
 
