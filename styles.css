@@ -11,6 +11,28 @@
   background-color: black;
 }
 
+#Background2{
+  z-index: 0;
+  position: relative;
+  width: 100%; /* or 100vw for the entire viewport width */
+  height: 100vh; /* for the entire viewport height */
+  background-color: black;
+
+  display: flex;           /* Enable flexbox layout */
+  justify-content: space-evenly; /* Center content horizontally */
+}
+
+#Background3{
+  z-index: 0;
+  position: relative;
+  width: 100%; /* or 100vw for the entire viewport width */
+  height: 100vh; /* for the entire viewport height */
+  background-color: black;
+
+  display: flex;           /* Enable flexbox layout */
+  justify-content: space-evenly; /* Center content horizontally */
+}
+
 #Title{
   z-index: 1;
   position: absolute;
@@ -57,6 +79,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
 
 
 /* Define the keyframes for the animation */
@@ -127,7 +150,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 #Paragraph2{
   z-index: 1;
   position: absolute;
-  top: 91%;
+  top: 91.5%;
   height: 3%;
   width: 100%; /* Adjusted to 100% to cover the entire width of the parent */
   color: rgb(114, 114, 114);
@@ -200,6 +223,148 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 
 
 
+
+#Title2{
+  z-index: 1;
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 525%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  animation: translateDown ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+     /* For Centering */
+  text-align: center;
+  display: inline-block; 
+  animation: scaleAnimation 4s infinite alternate; /* 3s duration, infinite loop, alternate direction */
+}
+
+
+#Title3 {
+  z-index: 1;
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  height: 11%;
+  color: rgb(114, 114, 114);
+  font-size: 200%; /* Adjusted font size using px units */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+.FeatureCard{
+  position: relative;
+  overflow: hidden;
+  top: 33%;
+  width: 25%;
+  background: rgba(53, 53, 53, 0.24);
+  border-radius: 20px;
+  height: 600px;           /* Set height as desired */
+  text-align: center;
+  display: inline-block; 
+}
+
+.FeatureCardGifDiv{
+  z-index: 5;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 40%;
+  top: 0%;
+  width: 90%;
+  border-radius: 20px;
+  border-color: black;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  display: inline-block; 
+}
+
+#FeatureCard1Title{
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 15%; 
+  font-size: 525%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+  text-align: center;
+  display: inline-block; 
+}
+
+#FeatureCard1SubTitle{
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 35%; 
+  font-size: 250%;
+  top: 5%;
+  color: white;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+  text-align: center;
+  display: inline-block; 
+}
+
+#FeatureCard1Gif{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+#FeatureCard2Title{
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 15%; 
+  font-size: 525%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+  text-align: center;
+  display: inline-block; 
+}
+
+#FeatureCard2SubTitle{
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 35%; 
+  font-size: 225%;
+  top: 5%;
+  color: white;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+  text-align: center;
+  display: inline-block; 
+}
+
+
+
+
+
+
+
+
+
+
 /* Define the @keyframes for the rotating gradient */
 @-webkit-keyframes rotateGradient {
   0% {
@@ -219,6 +384,31 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
   animation: rotateGradient 10s infinite reverse; /* Apply the animation */
 }
 
+/* Apply the rotating gradient animation to .gradient-text */
+.gradient-text2 {
+  background: -webkit-linear-gradient(left, #ff00ea, #00ffea, #ff00ea); /* Initial gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%; /* Increase background size for animation effect */
+  animation: rotateGradient 7s infinite reverse; /* Apply the animation */
+}
+
+.gradient-text3 {
+  background: -webkit-linear-gradient(left, #ff0000, #ffae00, #ff0000); /* Initial gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%; /* Increase background size for animation effect */
+  animation: rotateGradient 7s infinite reverse; /* Apply the animation */
+}
+
+.gradient-text4 {
+  background: -webkit-linear-gradient(left, #ff0000, #00ff22, #2600ff, #ff0000); /* Initial gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%; /* Increase background size for animation effect */
+  animation: rotateGradient 7s infinite reverse; /* Apply the animation */
+}
+
 @keyframes rotateGradient {
   0% {
     background-position: 200% 0%; /* Start position of the gradient */
@@ -227,6 +417,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
     background-position: 0% 0%; /* Middle position of the gradient */
   }
 }
+
 
 
 
