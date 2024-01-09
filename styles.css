@@ -453,3 +453,346 @@ img {
   height: auto;              /* Maintain aspect ratio */
 }
 
+
+#TOSbutton{
+  background-color: rgb(43, 43, 43);
+  position: relative;
+  top: 96%;
+  left: -0.5%;
+  width: 150px;           /* Define the width of the pill shape */
+    height: 25px;           /* Define the height of the pill shape */
+    border-radius: 25px;    /* Set half of the height for rounded ends */
+    display: inline-block;  /* Display inline-block to prevent wrapping */
+    text-align: center;     /* Center the content horizontally */
+    line-height: 50px;      /* Align the content vertically */
+    color: #ffffff;         /* Text color */
+    font-weight: bold;      /* Bold text */
+    border-width: 0px;
+    text-transform: uppercase; /* Uppercase text */
+    line-height: 25px; 
+}
+
+
+#tosdiv{
+  top: 4%;
+  width: 40%;            /* Reduce the width by 5% while maintaining aspect ratio */
+  height: 60%;         /* Reduce the height by 2.5% to maintain the aspect ratio */
+  left: 30%;             /* Adjust the left position to center the smaller element */
+  position: absolute; /* Positioning type for left positioning */
+  background-color: rgb(19, 19, 19); /* Background color for visibility */
+  border-radius: 25px; /* Rounded corners for pill shape appearance */
+  display: inline-block; /* Display inline-block for inline level block container */
+  text-align: center;    /* Center align text horizontally */
+  line-height: 50%;     /* Center align text vertically */
+  color: #ffffff;       /* Text color */
+  font-weight: bold;    /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  
+  animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+#Backgroundtos{
+  z-index: 0;
+  position: relative;
+  width: 100%; /* or 100vw for the entire viewport width */
+  height: 400vh; /* for the entire viewport height */
+  background-color: black;
+}
+
+#Titletos{
+  z-index: 1;
+  position: absolute;
+  top: 1%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 525%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  animation: translateDown ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+     /* For Centering */
+  text-align: center;
+  display: inline-block; 
+  animation: scaleAnimation 4s infinite alternate; /* 3s duration, infinite loop, alternate direction */
+}
+
+#tosHeader1{
+  position: absolute;
+  top: 2%;
+  left: -10%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph1{
+  position: absolute;
+  top: 3.5%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+
+
+#tosHeader2{
+  position: absolute;
+  top: 10%;
+  left: -22%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph2{
+  position: absolute;
+  top: 11.5%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+
+#tosHeader3{
+  position: absolute;
+  top: 18.25%;
+  left: -18%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph3{
+  position: absolute;
+  top: 19.75%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+#tosHeader4{
+  position: absolute;
+  top: 25.25%;
+  left: -12.5%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph4{
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+
+#tosHeader5{
+  position: absolute;
+  top: 38.25%;
+  left: -16%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph5{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+
+#tosHeader6{
+  position: absolute;
+  top: 47%;
+  left: -10%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph6{
+  position: absolute;
+  top: 49%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+
+#tosHeader7{
+  position: absolute;
+  top: 56%;
+  left: -28%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph7{
+  position: absolute;
+  top: 58%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+
+#tosHeader8{
+  position: absolute;
+  top: 64%;
+  left: -21.5%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph8{
+  position: absolute;
+  top: 66.5%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+#tosHeader9{
+  position: absolute;
+  top: 72.5%;
+  left: -24%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph9{
+  position: absolute;
+  top: 74.5%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+#Backbutton{
+  background-color: rgb(43, 43, 43);
+  position: relative;
+  top: 98%;
+  left: -0.5%;
+  width: 150px;           /* Define the width of the pill shape */
+    height: 25px;           /* Define the height of the pill shape */
+    border-radius: 25px;    /* Set half of the height for rounded ends */
+    display: inline-block;  /* Display inline-block to prevent wrapping */
+    text-align: center;     /* Center the content horizontally */
+    line-height: 50px;      /* Align the content vertically */
+    color: #ffffff;         /* Text color */
+    font-weight: bold;      /* Bold text */
+    border-width: 0px;
+    text-transform: uppercase; /* Uppercase text */
+    line-height: 25px; 
+
+}
+
