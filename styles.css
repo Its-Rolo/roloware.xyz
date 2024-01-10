@@ -454,6 +454,186 @@ img {
 }
 
 
+
+
+#Title4{
+  z-index: 1;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 525%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  animation: translateDown ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+     /* For Centering */
+  text-align: center;
+  display: inline-block; 
+  animation: scaleAnimation 4s infinite alternate; /* 3s duration, infinite loop, alternate direction */
+}
+
+
+/* styles.css */
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box {
+  top: 45%;
+  width: 350px;
+  margin-right: 150px; /* Add margin between the boxes */
+  border-radius: 25px;
+  height: 150px;
+  background-color: rgb(29, 29, 29);
+  position: absolute; /* Position the boxes absolutely */
+  left: 100%; /* Start the boxes from the right edge of the screen */
+}
+
+.box:nth-child(1) {
+  animation: slide 40s linear infinite 0s; /* Adjusted duration to 10s for the first box */
+}
+
+.box:nth-child(2) {
+  animation: slide 40s linear infinite -8s; /* Adjusted duration to 10s with staggered delay */
+}
+
+.box:nth-child(3) {
+  animation: slide 40s linear infinite -16s;
+}
+
+.box:nth-child(4) {
+  animation: slide 40s linear infinite -24s;
+}
+
+.box:nth-child(5) {
+  animation: slide 40s linear infinite -32s;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the gradient circle */
+  width: 110%; /* Adjust as needed based on box width */
+  height: 100%; /* Adjust as needed based on box height */
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 1) 100%); /* Radial gradient background */
+  z-index: 1; /* Ensure the gradient circle appears above the boxes */
+  filter: blur(10px);        /* Apply a blur effect to the circle */
+}
+
+@keyframes slide {
+  0% {
+    left: 100%; /* Start from the right edge of the screen */
+  }
+  100% {
+    left: calc(0% - 300px); /* Move to the left edge of the screen minus the box width */
+  }
+}
+
+
+#paypal{
+  text-align: center;
+  overflow: hidden;
+}
+
+#paypalTitle{
+  position: relative;
+  top: 22%;
+  color: rgb(0, 89, 255);
+  font-size: 400%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+}
+
+#PaypalIMG{
+  top: 20%;
+  left: 5%;
+  position: relative;
+  width: 90%;
+  height: 60%;
+}
+
+#cardIMG{
+  top: 20%;
+  left: 15%;
+  position: relative;
+  width: 70%;
+  height: 60%;
+}
+
+#ethereumIMG{
+  top: 25%;
+  left: 4%;
+  position: relative;
+  width: 90%;
+  height: 50%;
+}
+
+
+#gpayIMG{
+  top: 14%;
+  left: 15%;
+  position: relative;
+  width: 70%;
+  height: 75%;
+}
+
+#sellixIMG{
+  top: 14%;
+  left: 10%;
+  position: relative;
+  width: 80%;
+  height: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #TOSbutton{
   background-color: rgb(43, 43, 43);
   position: relative;
@@ -476,7 +656,7 @@ img {
 #tosdiv{
   top: 4%;
   width: 40%;            /* Reduce the width by 5% while maintaining aspect ratio */
-  height: 70%;         /* Reduce the height by 2.5% to maintain the aspect ratio */
+  height: 80%;         /* Reduce the height by 2.5% to maintain the aspect ratio */
   left: 30%;             /* Adjust the left position to center the smaller element */
   position: absolute; /* Positioning type for left positioning */
   background-color: rgb(19, 19, 19); /* Background color for visibility */
@@ -530,7 +710,7 @@ img {
 #tosHeader1{
   position: absolute;
   top: 2%;
-  left: -9%;
+  left: -10%;
   width: 100%;
   height: 11%; 
   color: white;
@@ -822,4 +1002,6 @@ img {
     line-height: 25px; 
 
 }
+
+
 
