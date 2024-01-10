@@ -530,7 +530,7 @@ img {
 #tosHeader1{
   position: absolute;
   top: 2%;
-  left: -10%;
+  left: -9%;
   width: 100%;
   height: 11%; 
   color: white;
@@ -766,6 +766,33 @@ img {
 #tosParagraph9{
   position: absolute;
   top: 74.5%;
+  left: 5%;
+  width: 90%;
+  height: 25%; 
+  color: rgb(105, 105, 105);
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Adjust the line-height as needed */
+}
+
+#tosHeader10{
+  position: absolute;
+  top: 80%;
+  left: -28%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+}
+
+#tosParagraph10{
+  position: absolute;
+  top: 83%;
   left: 5%;
   width: 90%;
   height: 25%; 
