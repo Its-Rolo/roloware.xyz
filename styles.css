@@ -476,7 +476,7 @@ img {
 #tosdiv{
   top: 4%;
   width: 40%;            /* Reduce the width by 5% while maintaining aspect ratio */
-  height: 60%;         /* Reduce the height by 2.5% to maintain the aspect ratio */
+  height: 70%;         /* Reduce the height by 2.5% to maintain the aspect ratio */
   left: 30%;             /* Adjust the left position to center the smaller element */
   position: absolute; /* Positioning type for left positioning */
   background-color: rgb(19, 19, 19); /* Background color for visibility */
