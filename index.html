@@ -15,17 +15,17 @@
 </head>
 <body>
     <div id="Background" >
-        <label id="Title" draggable="false">RoloWare</label>
-        <label class="gradient-text" id="SubTitle" draggable="false">Best ShellShock.io Cheat</label>
-        <label id="Paragraph1" draggable="false">RoloWare is the <span class="gradient-text">#1</span> best premium ShellShock.io cheat. Ever.</label>
+        <label id="Title">RoloWare</label>
+        <label class="gradient-text" id="SubTitle">Best ShellShock.io Cheat</label>
+        <label id="Paragraph1">RoloWare is the <span class="gradient-text">#1</span> best premium ShellShock.io cheat. Ever.</label>
 
-        <div id="BlurCircle1" draggable="false" class="circle"></div>
+        <div id="BlurCircle1" class="circle"></div>
         
-        <label id="Paragraph2" draggable="false">Plenty of useful features to dominate opponents.</label>  
-        <label id="Paragraph3" draggable="false">Premium quality, cheap price.</label>  
+        <label id="Paragraph2">Plenty of useful features to dominate opponents.</label>  
+        <label id="Paragraph3">Premium quality, cheap price.</label>  
     </div>
-    <div id="img1div" draggable="false" data-tilt data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare="0.1" data-tilt-max="10" data-tilt-transition="true" data-tilt-speed="1000">
-        <img id="HUDimg1" draggable="false" src="assets/HUDblue.png" >
+    <div id="img1div" data-tilt data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare="0.1" data-tilt-max="10" data-tilt-transition="true" data-tilt-speed="1000">
+        <img id="HUDimg1" src="/assets/HUDblue.png" >
     </div>
 
     <div id="Background2" >
@@ -56,26 +56,30 @@
 
     <div id="Background3" >
        <label id="Title3">And more coming soon!</label>
-        <label id="Title4">A variety of payment methods</label>
-            <div class="container">
-                
-                <div id = "paypal" class="box">
-                    <img id="PaypalIMG" src="assets/PaypalIMG.png">
-                </div>
-                <div id = "card"class="box">
-                    <img id="cardIMG" src="assets/cardIMG.png">
-                </div>
-                <div id = "ethereum" class="box">
-                    <img id="ethereumIMG" src="assets/ethereumIMG.png">
-                </div>
-                
-                <div id = "googlepay" class="box">
-                    <img id="gpayIMG" src="assets/googlePay.png">
-                </div>
+       <label id="Title4">A variety of payment methods</label>
+       <div class="container">
         
-                <div id = "sellix" class="box">
-                    <img id="sellixIMG" src="assets/sellixIMG.png">
-             </div>
+        <div id = "paypal" class="box">
+            <img id="PaypalIMG" src="assets/PaypalIMG.png">
+        </div>
+        <div id = "card"class="box">
+            <img id="cardIMG" src="assets/cardIMG.png">
+        </div>
+        <div id = "ethereum" class="box">
+            <img id="ethereumIMG" src="assets/ethereumIMG.png">
+        </div>
+        
+        <div id = "googlepay" class="box">
+            <img id="gpayIMG" src="assets/googlePay.png">
+        </div>
+
+        <div id = "sellix" class="box">
+            <img id="sellixIMG" src="assets/sellixIMG.png">
+        </div>
+        
+        <!-- Add more divs as needed -->
+      </div>
+
        
     </div>
 
@@ -84,32 +88,15 @@
         <label id="SubTitle5">Nowhere else gives this much "bang" for your buck.</label>
         <p id="priceParagraph">RoloWare is only  <span class="gradient-text">$5</span> for a  <span class="gradient-text">Lifetime</span> key, this is even less money than only  <span style="color: red;">1</span> month of shellshock VIP! 
             <br> We offer a super  <span class="gradient-text">cheap price</span>, without compromising on  <span class="gradient-text">quality</span>. 
-            <br> Enjoy the most  <span class="gradient-text">premium</span> cheat features on the market without having paying a premium price.
+            <br> Enjoy the most  <span class="gradient-text">premium</span> cheat features on the market without paying a premium.
         </p>
         <a href="tos.html">
             <button id="TOSbutton">Terms Of Service</button>
           </a>
     </div>
 
-        
-    <script src="index.js"></script>
-    <script src="script.js"></script>
-    <script type="text/javascript" src="node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.31.0/dist/tsparticles.min.js"></script>
-
-    <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
+    <script src="/index.js"></script>
+    <script type="text/javascript" src="/node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
+    
 </body>
 </html>
