@@ -33,6 +33,17 @@
   justify-content: space-evenly; /* Center content horizontally */
 }
 
+#Background4{
+  z-index: 0;
+  position: relative;
+  width: 100%; /* or 100vw for the entire viewport width */
+  height: 100vh; /* for the entire viewport height */
+  background-color: black;
+
+  display: flex;           /* Enable flexbox layout */
+  justify-content: space-evenly; /* Center content horizontally */
+}
+
 #Title{
   z-index: 1;
   position: absolute;
@@ -636,7 +647,6 @@ img {
 
 #TOSbutton{
   background-color: rgb(43, 43, 43);
-  z-index: 999;
   position: relative;
   top: 96%;
   left: -0.5%;
@@ -1005,4 +1015,56 @@ img {
 }
 
 
+#Title5{
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 11%; 
+  color: white;
+  font-size: 525%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  animation: translateDown ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+     /* For Centering */
+  text-align: center;
+  display: inline-block; 
+  animation: scaleAnimation 4s infinite alternate; /* 3s duration, infinite loop, alternate direction */
+}
+
+#SubTitle5{
+  z-index: 1;
+  position: absolute;
+  top: 11%;
+  height: 3%;
+  width: 100%; /* Adjusted to 100% to cover the entire width of the parent */
+  color: rgb(114, 114, 114);
+  font-size: 150%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block; 
+}
+
+#priceParagraph{
+  z-index: 1;
+  position: absolute;
+  top: 25%;
+  height: 3%;
+  width: 100%; /* Adjusted to 100% to cover the entire width of the parent */
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block; 
+}
 
