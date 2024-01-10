@@ -636,6 +636,7 @@ img {
 
 #TOSbutton{
   background-color: rgb(43, 43, 43);
+  z-index: 999;
   position: relative;
   top: 96%;
   left: -0.5%;
