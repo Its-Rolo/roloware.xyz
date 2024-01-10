@@ -1,5 +1,22 @@
 //* Importing UUID Generator *//
-const uuid = require('uuid').v4
+const uuid = function generateUUID() {
+  let uuid = '';
+  const chars = '0123456789abcdef';
+
+  for (let i = 0; i < 32; i++) {
+    const randomNumber = Math.floor(Math.random() * 16);
+    const char = chars[i === 12 ? (randomNumber & 0x3) | 0x8 : randomNumber];
+    uuid += (i === 8 || i === 13 || i === 18 || i === 23) ? '-' : '';
+    uuid += char;
+  }
+
+  return uuid;
+}
+
+// Example usage:
+const myUUID = uuid(); // Call the function using the name `uuid`
+console.log(myUUID);
+
 
 //* Importing Hashing / Ciphers from "crypto" *//
 const { createHash, createCipheriv, createDecipheriv } = require('crypto')
