@@ -1226,7 +1226,7 @@ img {
   color: blue;
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
   font-weight: 700; /* Set the font weight to bold (700) */
-  left: 20px;
+  left: 23px;
   top: 15px;
 }
 
@@ -1236,6 +1236,6 @@ img {
   color: rgb(114, 114, 114);
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
   font-weight: 700; /* Set the font weight to bold (700) */
-  left: 65px;
+  left: 68px;
   top: 48px;
 }
