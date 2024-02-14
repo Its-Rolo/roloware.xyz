@@ -1210,6 +1210,8 @@ img {
   z-index: 0;
   position: absolute;
   border-radius: 25px;
+  top: 25px;
+  left: 25px;
   width: 300px; /* or 100vw for the entire viewport width */
   height: 100px; /* for the entire viewport height */
   background-color: black;
