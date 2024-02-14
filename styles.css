@@ -1205,3 +1205,35 @@ img {
   font-weight: 700; /* Set the font weight to bold (700) */
 }
 
+
+#notification{
+  z-index: 0;
+  position: absolute;
+  border-radius: 25px;
+  width: 300px; /* or 100vw for the entire viewport width */
+  height: 100px; /* for the entire viewport height */
+  background-color: black;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #3e1cda;
+}
+
+#notifText1{
+  font-size: 25px;
+  position: absolute;
+  color: blue;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  left: 20px;
+  top: 15px;
+}
+
+#notifText2{
+  font-size: 25px;
+  position: absolute;
+  color: rgb(114, 114, 114);
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+  left: 65px;
+  top: 48px;
+}
