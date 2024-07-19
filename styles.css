@@ -38,7 +38,7 @@
   position: relative;
   width: 100%; /* or 100vw for the entire viewport width */
   height: 100vh; /* for the entire viewport height */
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 
   display: flex;           /* Enable flexbox layout */
   justify-content: space-evenly; /* Center content horizontally */
@@ -91,6 +91,19 @@
     animation-fill-mode: forwards;
 }
 
+#SubTitle3 {
+  z-index: 1;
+  position: relative;
+  top: 75%;
+  color: rgb(102, 102, 102);
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+
+  text-align: center; /* Center text horizontally */
+
+}
+
 
 
 /* Define the keyframes for the animation */
@@ -123,6 +136,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
   left: 38.75%; /* Adjust left position as needed based on container width and div width */
   margin-left: auto; /* Auto margin on left */
   margin-right: auto; /* Auto margin on right */
+  height: 50%;
   
   animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
@@ -142,7 +156,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 #Paragraph1{
   z-index: 1;
   position: absolute;
-  top: 88%;
+  top: 83%;
   height: 3%;
   width: 100%; /* Adjusted to 100% to cover the entire width of the parent */
   color: rgb(114, 114, 114);
@@ -161,7 +175,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 #Paragraph2{
   z-index: 1;
   position: absolute;
-  top: 91.5%;
+  top: 86.5%;
   height: 3%;
   width: 100%; /* Adjusted to 100% to cover the entire width of the parent */
   color: rgb(114, 114, 114);
@@ -180,7 +194,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 #Paragraph3{
   z-index: 1;
   position: absolute;
-  top: 95%;
+  top: 90%;
   height: 3%;
   width: 100%; /* Adjusted to 100% to cover the entire width of the parent */
   color: rgb(114, 114, 114);
@@ -238,7 +252,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 #Title2{
   z-index: 1;
   position: absolute;
-  top: 15%;
+  top: 5%;
   width: 100%;
   height: 11%; 
   color: white;
@@ -264,24 +278,41 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 #Title3 {
   z-index: 1;
   position: absolute;
-  top: 2%;
+  top: 3%;
   width: 100%;
-  height: 11%;
-  color: rgb(114, 114, 114);
-  font-size: 200%; /* Adjusted font size using px units */
+  height: 11%; 
+  color: white;
+  font-size: 525%;
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
   font-weight: 700; /* Set the font weight to bold (700) */
+
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  animation: translateDown ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+     /* For Centering */
   text-align: center;
-  display: inline-block;
+  display: inline-block; 
+  animation: scaleAnimation 4s infinite alternate; /* 3s duration, infinite loop, alternate direction */
+}
+
+#paymentContainer{
+  position: absolute;
+  top: -25%;
+  height: 80%;
 }
 
 #paymentDisclaimer {
   z-index: 1;
   position: absolute;
-  top: 65%;
+  top: 70%;
   width: 100%;
   height: 11%;
-  color: rgb(114, 114, 114);
+  color: rgb(51, 51, 51);
   font-size: 200%; /* Adjusted font size using px units */
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
   font-weight: 700; /* Set the font weight to bold (700) */
@@ -290,95 +321,63 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 }
 
 
-.FeatureCard{
+
+#UndetectedDiv{
   position: relative;
   overflow: hidden;
-  top: 33%;
-  width: 25%;
-  background: rgba(53, 53, 53, 0.24);
-  border-radius: 20px;
-  height: 600px;           /* Set height as desired */
+  border-style: solid;       /* Specify border style */
+  border-width: 1px;        /* Specify border width */
+  border-color: rgb(19, 19, 19);       /* Specify border color */
+  top: 22%;
+  width: 80%;
+  background: rgb(12, 12, 12);
+  border-radius: 30px;
+  height: 500px;           /* Set height as desired */
   text-align: center;
   display: inline-block; 
+  opacity: 100%;
+  z-index: 1;
+  --dot-bg: rgb(12, 12, 12);
+  --dot-color: rgb(70, 70, 70);
+  --dot-size: 1px;
+  --dot-space: 15px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
 }
 
-.FeatureCardGifDiv{
-  z-index: 5;
+#UndetectedImage{
   position: relative;
   overflow: hidden;
-  width: 50%;
-  height: 40%;
   top: 0%;
-  width: 90%;
-  border-radius: 20px;
-  border-color: black;
-  background: rgb(255, 255, 255);
-  text-align: center;
-  display: inline-block; 
+  width: 60%;
+  background: rgba(53, 53, 53, 0.24);
+  border-radius: 0px;
+  z-index: 1;
 }
 
-#FeatureCard1Title{
-  z-index: 2;
-  position: relative;
-  width: 100%;
-  height: 15%; 
-  font-size: 525%;
+#UndetectedParagraph1{
+  position: absolute;
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
   font-weight: 700; /* Set the font weight to bold (700) */
-
-  text-align: center;
-  display: inline-block; 
-}
-
-#FeatureCard1SubTitle{
-  z-index: 2;
-  position: relative;
-  width: 100%;
-  height: 35%; 
-  font-size: 250%;
-  top: 5%;
   color: white;
-  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
-  font-weight: 700; /* Set the font weight to bold (700) */
-
-  text-align: center;
-  display: inline-block; 
-}
-
-#FeatureCard1Gif{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-
-#FeatureCard2Title{
-  z-index: 2;
-  position: relative;
-  width: 100%;
-  height: 15%; 
-  font-size: 525%;
-  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
-  font-weight: 700; /* Set the font weight to bold (700) */
-
-  text-align: center;
-  display: inline-block; 
-}
-
-#FeatureCard2SubTitle{
-  z-index: 2;
-  position: relative;
-  width: 100%;
-  height: 35%; 
-  font-size: 225%;
+  left: 60%;
   top: 5%;
-  color: white;
+  font-size: 45px;
+}
+
+#UndetectedParagraph2{
+  position: absolute;
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
   font-weight: 700; /* Set the font weight to bold (700) */
-
-  text-align: center;
-  display: inline-block; 
+  color: rgb(187, 187, 187);
+  left: 60%;
+  top: 45%;
+  font-size: 35px;
 }
+
+
 
 
 
@@ -401,7 +400,15 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 
 /* Apply the rotating gradient animation to .gradient-text */
 .gradient-text {
-  background: -webkit-linear-gradient(left, #9900ff, #3e1cda, #00d9ff, #9900ff); /* Initial gradient */
+  background: -webkit-linear-gradient(left, #66ffeb, #ff00d4, #ff00d4, #66ffeb,  rgb(102, 255, 235)); /* Initial gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%; /* Increase background size for animation effect */
+  animation: rotateGradient 10s infinite reverse; /* Apply the animation */
+}
+
+.gradient-text2 {
+  background: -webkit-linear-gradient(left, #66ffeb, #ff00d4  rgb(102, 255, 235)); /* Initial gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%; /* Increase background size for animation effect */
@@ -452,18 +459,132 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
   height: 300px;     /* Set the height of the container */
 }
 
+#BlurCircle3{
+  z-index: -3;
+}
+
+#BlurCircle4{
+  z-index: -3;
+}
+
 /* Blurred color circle effect */
-.circle {
-  position: absolute;        /* Position absolute to overlay behind the image */
-  top: 51%;                  /* Center vertically */
-  left: 50%;                 /* Center horizontally */
+.circle1 {
+  position: relative;        /* Position absolute to overlay behind the image */
+  top: 39%;                  /* Center vertically */
+  left: 47%;                 /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust positioning to center */
-  width: 400px;              /* Set the width of the circle */
-  height: 400px;             /* Set the height of the circle */
+  width: 250px;              /* Set the width of the circle */
+  height: 250px;             /* Set the height of the circle */
   border-radius: 50%;       /* Create a circular shape */
-  background: radial-gradient(circle at center, #9900ff, #3e1cda);
+  background: radial-gradient(circle at center, #ff16ec, #01ffea);
   filter: blur(100px);        /* Apply a blur effect to the circle */
   z-index: -1;               /* Place behind the image using a negative z-index */
+  animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.circle2 {
+  position: absolute;        /* Position absolute to overlay behind the image */
+  top: 58%;                  /* Center vertically */
+  left: 53%;                 /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to center */
+  width: 250px;              /* Set the width of the circle */
+  height: 250px;             /* Set the height of the circle */
+  border-radius: 50%;       /* Create a circular shape */
+  background: radial-gradient(circle at center, #01ffea, #ff16ec);
+  filter: blur(100px);        /* Apply a blur effect to the circle */
+  z-index: -1;               /* Place behind the image using a negative z-index */
+  animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Blurred color circle effect */
+#circle3 {
+  position: absolute;        /* Position absolute to overlay behind the image */
+  top: 68%;                  /* Center vertically */
+  left: 15%;                 /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to center */
+  width: 250px;              /* Set the width of the circle */
+  height: 250px;             /* Set the height of the circle */
+  border-radius: 50%;       /* Create a circular shape */
+  background: radial-gradient(circle at center, #ff16ec, #01ffea);
+  filter: blur(100px);        /* Apply a blur effect to the circle */
+  
+  animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#circle4 {
+  position: absolute;        /* Position absolute to overlay behind the image */
+  top: 28%;                  /* Center vertically */
+  left: 88%;                 /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to center */
+  width: 250px;              /* Set the width of the circle */
+  height: 250px;             /* Set the height of the circle */
+  border-radius: 50%;       /* Create a circular shape */
+  background: radial-gradient(circle at center, #01ffea, #ff16ec);
+  filter: blur(100px);        /* Apply a blur effect to the circle */
+  animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#circle5 {
+  position: absolute;        /* Position absolute to overlay behind the image */
+  top: 50%;                  /* Center vertically */
+  left: 30%;                 /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to center */
+  width: 250px;              /* Set the width of the circle */
+  height: 250px;             /* Set the height of the circle */
+  border-radius: 50%;       /* Create a circular shape */
+  background: radial-gradient(circle at center, #ff16ec, #01ffea);
+  filter: blur(100px);        /* Apply a blur effect to the circle */
+  
+  animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#circle6 {
+  position: absolute;        /* Position absolute to overlay behind the image */
+  top: 50%;                  /* Center vertically */
+  left: 60%;                 /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to center */
+  width: 250px;              /* Set the width of the circle */
+  height: 250px;             /* Set the height of the circle */
+  border-radius: 50%;       /* Create a circular shape */
+  background: radial-gradient(circle at center, #01ffea, #ff16ec);
+  filter: blur(100px);        /* Apply a blur effect to the circle */
+  animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#circle7 {
+  position: absolute;        /* Position absolute to overlay behind the image */
+  top: 50%;                  /* Center vertically */
+  left: 93%;                 /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to center */
+  width: 250px;              /* Set the width of the circle */
+  height: 250px;             /* Set the height of the circle */
+  border-radius: 50%;       /* Create a circular shape */
+  background: radial-gradient(circle at center, #ff16ec, #01ffea);
+  filter: blur(100px);        /* Apply a blur effect to the circle */
+  
+  animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#circle8 {
+  position: absolute;        /* Position absolute to overlay behind the image */
+  top: 50%;                  /* Center vertically */
+  left: 7%;                 /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to center */
+  width: 250px;              /* Set the width of the circle */
+  height: 250px;             /* Set the height of the circle */
+  border-radius: 50%;       /* Create a circular shape */
+  background: radial-gradient(circle at center, #01ffea, #ff16ec);
+  filter: blur(100px);        /* Apply a blur effect to the circle */
   animation: fadeInAnimation ease 6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -483,7 +604,7 @@ img {
 #Title4{
   z-index: 1;
   position: absolute;
-  top: 30%;
+  top: -3%;
   width: 100%;
   height: 11%; 
   color: white;
@@ -521,9 +642,18 @@ img {
   margin-right: 150px; /* Add margin between the boxes */
   border-radius: 25px;
   height: 150px;
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(29, 29, 29, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(11, 26, 31, 0.623);
   position: absolute; /* Position the boxes absolutely */
   left: 100%; /* Start the boxes from the right edge of the screen */
+  --dot-bg: rgb(12, 12, 12);
+  --dot-color: rgb(70, 70, 70);
+  --dot-size: 1px;
+  --dot-space: 15px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
 }
 
 .box:nth-child(1) {
@@ -659,18 +789,18 @@ img {
 
 
 #TOSbutton{
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(8, 8, 8);
   cursor: pointer; /* Change cursor to pointer */
   position: relative;
   top: 0%;
-  left: -0.5%;
+  left: 5.5%;
   width: 150px;           /* Define the width of the pill shape */
     height: 25px;           /* Define the height of the pill shape */
     border-radius: 25px;    /* Set half of the height for rounded ends */
     display: inline-block;  /* Display inline-block to prevent wrapping */
     text-align: center;     /* Center the content horizontally */
     line-height: 50px;      /* Align the content vertically */
-    color: #ffffff;         /* Text color */
+    color: #2c2c2c;         /* Text color */
     font-weight: bold;      /* Bold text */
     border-width: 0px;
     text-transform: uppercase; /* Uppercase text */
@@ -1138,104 +1268,219 @@ img {
   display: inline-block; 
 }
 
-#linkCards {
+
+
+
+.feature-item {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: scale(1.005);
+}
+
+.feature-item2 {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.feature-item2:hover {
+  transform: scale(1.01);
+}
+
+
+#FeaturesContainer {
   position: absolute;
-  top: 55%;
+  display: flex;            /* Use flexbox for layout */
+  justify-content: space-around; /* Evenly distribute space around the cards */
+  align-items: center;      /* Center items vertically if needed */
+  top: 16%;
+}
+
+.FeatureCard {
+  width: 453px;
+  height: 500px;
+  margin: 10px;              /* Example margin */
+  border-radius: 10px;       /* Example border radius */
+  flex: 1;                   /* Allow cards to grow and shrink */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  text-align: center;        /* Center the content inside the cards */
+  overflow: hidden;
+  border-style: solid;       /* Specify border style */
+  border-width: 1px;        /* Specify border width */
+  border-color: rgb(43, 43, 43);       /* Specify border color */
+  --dot-bg: rgb(12, 12, 12);
+  --dot-color: rgb(70, 70, 70);
+  --dot-size: 1px;
+  --dot-space: 15px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+}
+
+#recoilVideo{
+  position: relative;
+  left: 0%;
+  top: 51%;
   width: 100%;
-  height: 35%;
+}
+
+#zoomVideo{
+  position: relative;
+  left: 0%;
+  top: 51%;
+  width: 100%;
+}
+
+#recoillabel{
+  position: relative;
+  top: -44%;
+  left: 0%;
+  color: white;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+}
+
+#distanceESPlabel{
+  position: relative;
+  top: 5%;
+  left: 0%;
+  color: white;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+}
+
+#distanceESPvideo{
+  position: relative;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+}
+
+#distanceESPlabel{
+  position: relative;
+  top: 5%;
+  left: 0%;
+  color: white;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+}
+
+
+
+
+
+
+.linkCard2 {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.linkCard2:hover {
+  transform: scale(1.08);
+}
+
+
+
+
+#linksContainer {
+  position: absolute;
+  display: flex;                /* Use flexbox for layout */
+  justify-content: center;      /* Center items horizontally */
+  align-items: center;          /* Center items vertically */
+  background-color: #000000;
+  width: 100%;
+  height: 50%;
+  top: 68%;                     /* Center container vertically */
+  transform: translateY(-50%); /* Center container vertically with transform */
 }
 
 .linkCard {
-  position: relative;
-  overflow: hidden;
-  top: calc(50% - 100px);
   width: 400px;
-  background: rgba(53, 53, 53, 0.24);
-  border-radius: 50px;
-  left: calc(49% - 400px);
   height: 100px;
-  display: inline-block;
-  justify-content: center;
-  margin-left: auto; /* Auto margin on left */
-  margin-right: auto; /* Auto margin on right */
-  border-width: 3px;
-  border-style: solid;
-  border-color: rgba(53, 53, 53, 0.24);
-  cursor: pointer; /* Change cursor to pointer */
+  margin: 0 30px;               /* Adjust margin to control spacing */
+  border-radius: 50px;          /* Example border radius */
+  flex: 0 1 auto;               /* Prevent cards from growing, allow shrinking */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  text-align: center;           /* Center the content inside the cards */
+  overflow: hidden;
+  border-style: solid;          /* Specify border style */
+  border-width: 1px;            /* Specify border width */
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba(31, 111, 135, 0.37);
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  justify-content: center;      /* Center items horizontally */
+  align-items: center;          /* Center items vertically */
+  
 }
 
-#DiscordAnchor{
- position: relative;
+#discordLabel{
+  top: 25%;
+  color: rgb(172, 172, 172);
+  font-size: 38px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
 }
 
-.linkCard:hover{
-  scale: 0.97;
-  cursor: pointer; /* Change cursor to pointer */
-  border-width: 3px;
-  border-style: solid;
-  border-color: #3e1cda;
-}
-
-#DiscordLabel{
-  cursor: pointer; /* Change cursor to pointer */
-  z-index: 1;
+#discordIcon {
   position: absolute;
-  top:6%;
-  left: 18%;
+  width: 5%;
+  left: 25.5%;
+  top: 27%;
+  transform: rotate(-15deg);
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+/* Scale icon when hovering over the container */
+#linksContainer:hover #discordIcon {
+  transform: rotate(-13deg) scale(0.92); /* Scale icon on container hover */
+}
+
+#cartIcon {
+  position: absolute;
+  width: 5%;
+  left: 70.2%;
+  top: 24%;
+  transform: rotate(15deg);
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+#purchaseLabel{
+  position: relative;
+  top: 25%;
+  color: rgb(172, 172, 172);
+  font-size: 42px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
+  font-weight: 700; /* Set the font weight to bold (700) */
+}
+
+#linksContainer:hover #cartIcon {
+  transform: rotate(13deg) scale(1.2); /* Scale icon on container hover */
+}
+
+#discordButton{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
   width: 100%;
-  height: 11%; 
-  color: rgb(161, 161, 161);
-  font-size: 450%;
-  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
-  font-weight: 700; /* Set the font weight to bold (700) */
+  opacity: 0;
 }
 
-
-#PurchaseLabel{
-  cursor: pointer; /* Change cursor to pointer */
-  z-index: 1;
+#purchaseButton{
   position: absolute;
-  top:6%;
-  left: 13%;
+  top: 0%;
+  left: 0%;
+  height: 100%;
   width: 100%;
-  height: 11%; 
-  color: rgb(161, 161, 161);
-  font-size: 450%;
-  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
-  font-weight: 700; /* Set the font weight to bold (700) */
+  opacity: 0;
 }
 
-
-#notification{
-  z-index: 0;
-  position: absolute;
-  border-radius: 25px;
-  top: 25px;
-  left: 25px;
-  width: 300px; /* or 100vw for the entire viewport width */
-  height: 100px; /* for the entire viewport height */
-  background-color: black;
-  border-width: 3px;
-  border-style: solid;
-  border-color: #3e1cda;
-}
-
-#notifText1{
-  font-size: 25px;
-  position: absolute;
-  color: blue;
-  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
-  font-weight: 700; /* Set the font weight to bold (700) */
-  left: 23px;
-  top: 15px;
-}
-
-#notifText2{
-  font-size: 25px;
-  position: absolute;
-  color: rgb(114, 114, 114);
-  font-family: 'Roboto', sans-serif; /* Use Roboto font family */
-  font-weight: 700; /* Set the font weight to bold (700) */
-  left: 68px;
-  top: 48px;
-}
