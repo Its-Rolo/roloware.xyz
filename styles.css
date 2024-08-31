@@ -256,7 +256,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
   width: 100vw;
   height: 11vh; 
   color: white;
-  font-size: 525%;
+  font-size: 2vw;
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
   font-weight: 700; /* Set the font weight to bold (700) */
 
@@ -278,9 +278,9 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 #Title3 {
   z-index: 1;
   position: absolute;
-  top: 3%;
-  width: 100%;
-  height: 11%; 
+  top: 3vh;
+  width: 100vw;
+  height: 11vh; 
   color: white;
   font-size: 525%;
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
@@ -302,16 +302,16 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 
 #paymentContainer{
   position: absolute;
-  top: -25%;
-  height: 80%;
+  top: -25vh;
+  height: 80vh;
 }
 
 #paymentDisclaimer {
   z-index: 1;
   position: absolute;
-  top: 70%;
-  width: 100%;
-  height: 11%;
+  top: 57vh;
+  width: 100vw;
+  height: 11vh;
   color: rgb(51, 51, 51);
   font-size: 200%; /* Adjusted font size using px units */
   font-family: 'Roboto', sans-serif; /* Use Roboto font family */
@@ -328,11 +328,11 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
   border-style: solid;       /* Specify border style */
   border-width: 1px;        /* Specify border width */
   border-color: rgb(19, 19, 19);       /* Specify border color */
-  top: 22%;
-  width: 80%;
+  top: 22vh;
+  width: 80vw;
   background: rgb(12, 12, 12);
   border-radius: 30px;
-  height: 500px;           /* Set height as desired */
+  height: 57vh;           /* Set height as desired */
   text-align: center;
   display: inline-block; 
   opacity: 100%;
@@ -351,7 +351,8 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
   position: relative;
   overflow: hidden;
   top: 0%;
-  width: 60%;
+  width: 48vw;
+  height: 57vh;
   background: rgba(53, 53, 53, 0.24);
   border-radius: 0px;
   z-index: 1;
@@ -363,8 +364,8 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
   font-weight: 700; /* Set the font weight to bold (700) */
   color: white;
   left: 60%;
-  top: 5%;
-  font-size: 45px;
+  top: 10%;
+  font-size: 3vw;
 }
 
 #UndetectedParagraph2{
@@ -374,7 +375,7 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
   color: rgb(187, 187, 187);
   left: 60%;
   top: 45%;
-  font-size: 35px;
+  font-size: 1.8vw;
 }
 
 
@@ -470,8 +471,8 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 /* Blurred color circle effect */
 .circle1 {
   position: relative;        /* Position absolute to overlay behind the image */
-  top: 39%;                  /* Center vertically */
-  left: 47%;                 /* Center horizontally */
+  top: 39vh;                  /* Center vertically */
+  left: 47vw;                 /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust positioning to center */
   width: 250px;              /* Set the width of the circle */
   height: 250px;             /* Set the height of the circle */
@@ -485,8 +486,8 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 }
 .circle2 {
   position: absolute;        /* Position absolute to overlay behind the image */
-  top: 58%;                  /* Center vertically */
-  left: 53%;                 /* Center horizontally */
+  top: 58vh;                  /* Center vertically */
+  left: 53vw;                 /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust positioning to center */
   width: 250px;              /* Set the width of the circle */
   height: 250px;             /* Set the height of the circle */
@@ -502,8 +503,8 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 /* Blurred color circle effect */
 #circle3 {
   position: absolute;        /* Position absolute to overlay behind the image */
-  top: 68%;                  /* Center vertically */
-  left: 15%;                 /* Center horizontally */
+  top: 68vh;                  /* Center vertically */
+  left: 15vw;                 /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust positioning to center */
   width: 250px;              /* Set the width of the circle */
   height: 250px;             /* Set the height of the circle */
@@ -517,8 +518,8 @@ animation: scaleAnimation 3s infinite alternate; /* 3s duration, infinite loop, 
 }
 #circle4 {
   position: absolute;        /* Position absolute to overlay behind the image */
-  top: 28%;                  /* Center vertically */
-  left: 88%;                 /* Center horizontally */
+  top: 29vh;                  /* Center vertically */
+  left: 87.5vw;                 /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust positioning to center */
   width: 250px;              /* Set the width of the circle */
   height: 250px;             /* Set the height of the circle */
